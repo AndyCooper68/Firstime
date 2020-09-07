@@ -18,12 +18,13 @@ public class Example {
 		boolean isThereRemainder = true ;
 		
 		int divider = 2;
-		while(isThereRemainder && divider < number){
+		while((( number % divider !=0) && divider++ < number)){
+			return divider == number;
 			
 			
-			isThereRemainder= ( number % divider !=0);
 			
-			divider++;
+			
+			
 			
 		}
 		
